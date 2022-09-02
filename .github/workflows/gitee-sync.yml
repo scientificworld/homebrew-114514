@@ -17,8 +17,8 @@ jobs:
       
       - uses: Yikun/hub-mirror-action@master
         with:
-          src: github/kunpengcompute
-          dst: gitee/kunpengcompute
+          src: github/scientificworld
+          dst: gitee/scientificworld
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           account_type: org
