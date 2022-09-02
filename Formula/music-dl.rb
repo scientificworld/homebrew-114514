@@ -1,4 +1,4 @@
-class MusicDL < Formula
+class MusicDl < Formula
   desc "Music Searcher and Downloader."
   homepage "https://github.com/guanguans/music-dl"
   url "https://github.com/guanguans/music-dl/archive/refs/tags/v3.1.6.tar.gz"
