@@ -4,6 +4,7 @@ class Pyenconv < Formula
   url "https://github.com/scientificworld/pyenconv/archive/refs/heads/master.zip"
   sha256 "fb1e854bfa8cb6764673a065ff26adac96d22d96a633983e65faa31bd5a1b579"
   license "DFDT"
+  version "1.0"
 
   depends_on "python"
   uses_from_macos "make"
