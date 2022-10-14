@@ -1,10 +1,10 @@
 class Amule < Formula
   desc "aMule: The all-platform Mule"
   homepage "http://www.amule.org"
+  version "2.3.3"
   url "https://nchc.dl.sourceforge.net/project/amule/aMule/#{version}/aMule-#{version}.tar.xz"
   sha256 "a647309642331f3e033fdf0196e7232cdc67f46739d12a0294be06885f70c8bd"
   license "GPL-2.0-or-later"
-  version "2.3.3"
   head "https://github.com/amule-project/amule.git"
 
   depends_on "wxwidgets"
