@@ -29,4 +29,6 @@ cask "libreoffice-language-pack-cn" do
   # and that for this cask it is indeed this simple.
   # See https://github.com/Homebrew/homebrew-cask/pull/52893
   uninstall delete: "#{staged_path}/#{token}"
+
+  caveats "To complete the installation, you must also run the installer at:\n#{HOMEBREW_PREFIX}/Caskroom/libreoffice-language-pack-cn/#{version}/LibreOffice Language Pack.app"
 end
