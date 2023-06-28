@@ -1,5 +1,5 @@
 cask "icalingua-plus-plus" do
-  version "2.9.19"
+  version "2.9.20"
 
   url "https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v#{version}/Icalingua++-#{version}-universal.dmg",
     verified: "https://github.com/Icalingua-plus-plus/Icalingua-plus-plus"
