@@ -12,8 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Update icalingua-plus-plus
-        run: python3 scripts/update-icalingua-plus-plus.py
+      - name: Update packages
+        run: python3 scripts/update.py
 
       - name: Commit
         run: |
