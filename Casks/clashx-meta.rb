@@ -1,7 +1,7 @@
 cask "clashx-meta" do
   version "v1.3.1"
 
-  url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
+  url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/#{version}/ClashX.Meta.zip"
   name "ClashX.Meta"
   desc "A rule based proxy For Mac base on Clash Meta."
   homepage "https://github.com/MetaCubeX/ClashX.Meta"
