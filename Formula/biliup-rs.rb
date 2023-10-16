@@ -1,4 +1,4 @@
-class Biliup < Formula
+class BiliupRs < Formula
   version "0.1.19"
   homepage "https://github.com/biliup/biliup-rs"
 
