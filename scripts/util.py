@@ -1,5 +1,6 @@
 from pathlib import Path
 import time
+import re
 
 def update_util(name, **kwargs):
     with open(Path("templates") / (name + ".rb"), "r") as file:
@@ -16,3 +17,12 @@ def retry_util(func):
         except Exception:
             time.sleep(5)
     raise RuntimeError("Reached maximum number of retries")
+
+def acquire_util(name, key):
+    with open(name + ".rb", "r") as file:
+        content = file.read()
+    result = re.search(rf'{key}\s+"(.*)"', content)
+    if result:
+        return result.groups()[0]
+    else:
+        return None
