@@ -12,5 +12,5 @@ cask "detect-it-easy" do
 
   pkg "die_mac_#{arch}.pkg"
 
-  uninstall pkgutil: "com.yourcompany.DiE"
+  uninstall pkgutil: "ntinfo.die"
 end
