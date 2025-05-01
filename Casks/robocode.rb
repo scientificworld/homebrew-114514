@@ -12,13 +12,21 @@ cask "robocode" do
   shimscript = "#{staged_path}/robocode.wrapper.sh"
   binary shimscript, target: "robocode"
 
-  postflight do
-    FileUtils.chmod "+x", "#{staged_path}/robocode.sh"
+  preflight do
     File.write shimscript, <<~EOS
       #!/bin/sh
       cd "$(dirname "$(readlink -n "${0}")")" && \
         ./robocode.sh
     EOS
+  end
+
+  postflight do
+    FileUtils.chmod "+x", "#{staged_path}/robocode.sh"
+    FileUtils.chmod "+x", "#{staged_path}/set_java_options.sh"
+    FileUtils.chmod "+x", "#{staged_path}/meleerumble.sh"
+    FileUtils.chmod "+x", "#{staged_path}/roborumble.sh"
+    FileUtils.chmod "+x", "#{staged_path}/teamrumble.sh"
+    FileUtils.chmod "+x", "#{staged_path}/twinduel.sh"
   end
 
   caveats do
