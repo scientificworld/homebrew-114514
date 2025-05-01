@@ -9,7 +9,17 @@ cask "robocode" do
 
   container type: :zip
 
-  binary "#{staged_path}/robocode.sh", target: "robocode"
+  shimscript = "#{staged_path}/robocode.wrapper.sh"
+  binary shimscript, target: "robocode"
+
+  postflight do
+    FileUtils.chmod "+x", "#{staged_path}/robocode.sh"
+    File.write shimscript, <<~EOS
+      #!/bin/sh
+      cd "$(dirname "$(readlink -n "${0}")")" && \
+        ./robocode.sh
+    EOS
+  end
 
   caveats do
     depends_on_java "8+"
