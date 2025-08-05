@@ -21,5 +21,5 @@ if data["tag_name"][0] == "v":
 # naiveproxy
 data = retry_util(lambda: requests.get("https://api.github.com/repos/klzgrad/naiveproxy/releases/latest").json())
 version = data["tag_name"][1:]
-if version != acquire_util("Formula/biliup-rs", "version"):
-    update_util("Formula/biliup-rs", ver=version)
+if version != acquire_util("Formula/naiveproxy", "version"):
+    update_util("Formula/naiveproxy", ver=version)
