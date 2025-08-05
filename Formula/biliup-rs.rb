@@ -1,5 +1,5 @@
 class BiliupRs < Formula
-  version "138.0.7204.35-1"
+  version "0.2.4"
   homepage "https://github.com/biliup/biliup-rs"
 
   on_macos do
