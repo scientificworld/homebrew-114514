@@ -2,8 +2,8 @@ cask "assfonts" do
   version "0.7.3"
 
   arch arm: "aarch64", intel: "x86_64"
-  sha256 arm:   "80d97854129a0d75ecda60533930654ed3c18a8183605a75b602f37bf23d8859",
-         intel: "c90e1e0f439296f41c5b9d1c434f029965ab0b9c1d02f41e33495cd9d7c45a62"
+  sha256 arm:   "2bd36fb85055719d1d99f2dedb298e791cacaac4028ffed6f97c2d2b07093f7c",
+         intel: "c9b20f4d1fffa151eebaec126c75a485d86e96b7c6609507aa5ef0edf48bbac7"
 
   url "https://github.com/wyzdwdz/assfonts/releases/download/v#{version}/assfonts-v#{version}-#{arch}-macOS.dmg"
   name "assfonts"
