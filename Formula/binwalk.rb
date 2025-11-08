@@ -1,4 +1,4 @@
-class Binwalk2 < Formula
+class Binwalk < Formula
   # source: https://github.com/Homebrew/homebrew-core/raw/f90b14d016f646ad04ec64cd13ded22297596bf3/Formula/b/binwalk.rb
   include Language::Python::Virtualenv
 
@@ -26,7 +26,7 @@ class Binwalk2 < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "1e23a0c1cfd5ccb70085fb00191d971b545c79d5dfc3aa2693b9a552665db0d5"
   end
 
-  keg_only "it conflicts with binwalk"
+  keg_only "it conflicts with binwalk in official repo"
 
   depends_on "meson" => :build
   depends_on "ninja" => :build
