@@ -2,8 +2,8 @@ class Unrar < Formula
   # Copied from sidneys/homebrew-homebrew and updated.
   desc "Extract, view, and test RAR archives"
   homepage "https://www.rarlab.com/"
-  url "https://www.rarlab.com/rar/unrarsrc-7.1.1.tar.gz"
-  sha256 "2e9cbc9d1c250b40f4a7a6a363b6ccfa3703e190534979d18c8c4ac5ae35dafc"
+  url "https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz"
+  sha256 "b02e571a33af7711cd803080500370dc1d28eea82b2032480819d27462ad8b31"
 
   livecheck do
     url "https://ftp2.osuosl.org/pub/blfs/conglomeration/unrarsrc/"
