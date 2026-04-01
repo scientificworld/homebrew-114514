@@ -1,9 +1,9 @@
 cask "openutau@beta" do
-  version "0.1.549"
+  version "0.1.568"
 
   arch arm: "arm64", intel: "x64"
-  sha256 arm:   "01c6182dd5838dde775b6be8325d172ecc2a55ddd40c69b57067c02327db7996",
-         intel: "f3aa58e9f958ee4c740f78d497aee1aa8eb3baadd57f52e806455c674a3c8c56"
+  sha256 arm:   "593cf45c188501f277c5e4d735e9ac6efb2f3c5cc126052d1c14a88100ede30e",
+         intel: "3deaa7e2d2dcf2c08def3709c565a2228ed640a886ef7b039dcea8de4e269301"
 
   url "https://github.com/stakira/OpenUtau/releases/download/#{version}/OpenUtau-osx-#{arch}.dmg"
   name "OpenUtau"

@@ -1,6 +1,6 @@
 cask "robocode" do
-  version "1.9.5.5"
-  sha256 "439f8225bd5f32147218d6c31e2405f1d0e373ab526468c66cbd8c7ab8ba04c2"
+  version "1.10.1"
+  sha256 "ce8add965b3f230e71a5d47bd5020e7d62cd902e2b790bff257f04fe515974e4"
 
   url "https://downloads.sourceforge.net/project/robocode/robocode/#{version}/robocode-#{version}-setup.jar"
   name "Robocode"
