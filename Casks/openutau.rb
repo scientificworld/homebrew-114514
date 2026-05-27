@@ -1,4 +1,4 @@
-cask "openutau@beta" do
+cask "openutau" do
   version "0.1.565"
 
   arch arm: "arm64", intel: "x64"
