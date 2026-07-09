@@ -1,6 +1,6 @@
 class Haru < Formula
   version "1.0.3"
-  homepage "https://github.com/biliup/biliup"
+  homepage "https://haru.cat"
   desc "haru is a tiny cat living in your terminal."
 
   on_macos do
