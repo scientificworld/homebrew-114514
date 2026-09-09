@@ -23,3 +23,9 @@ data = retry_util(lambda: requests.get("https://api.github.com/repos/klzgrad/nai
 version = data["tag_name"][1:]
 if version != acquire_util("Formula/naiveproxy", "version"):
     update_util("Formula/naiveproxy", ver=version)
+
+# cliproxyapiplus
+data = retry_util(lambda: requests.get("https://api.github.com/repos/kaitranntt/CLIProxyAPIPlus/releases/latest").json())
+version = data["tag_name"][1:]
+if version != acquire_util("Formula/cliproxyapiplus", "version"):
+    update_util("Formula/cliproxyapiplus", ver=version)
