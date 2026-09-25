@@ -1,5 +1,5 @@
 class Naiveproxy < Formula
-  version "150.0.7871.63-1"
+  version "154.0.8037.49-2"
   desc "Make a fortune quietly"
   homepage "https://github.com/klzgrad/naiveproxy"
   license "BSD-3-Clause"
