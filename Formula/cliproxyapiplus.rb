@@ -1,7 +1,7 @@
 class Cliproxyapiplus < Formula
   desc "CCS-maintained fork of CLIProxyAPIPlus"
   homepage "https://github.com/kaitranntt/CLIProxyAPIPlus"
-  version "8.0.53-0"
+  version "8.0.56-0"
   license "MIT"
   head "https://github.com/kaitranntt/CLIProxyAPIPlus.git", branch: "main"
 
